@@ -9,13 +9,14 @@
 <body>
     <div class="slideshow-container">
         {% for slide in slides %}
-        <div class="slide" style="background-color: {{ slide.background_color }}; background-image: url('{{ slide.background_image }}');">
+        <div class="slide" style="background-color: {{ slide.background_color }}; background-image: url('{{ slide.background_image }}');position: relative;">
             <h1>{{ slide.title }}</h1>
             <ul>
                 {% for item in slide.content %}
                 <li>{{ item }}</li>
                 {% endfor %}
             </ul>
+            <div class="slide-number">Slide {{ loop.index }} of {{ loop.length }}</div>
         </div>
         {% endfor %}
     </div>
