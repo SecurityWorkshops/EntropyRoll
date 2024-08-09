@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Slideshow</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        {% for slide in slides %}
+        <div class="slide" style="background-color: {{ slide.background_color }}; background-image: url('{{ slide.background_image }}');">
+            <h1>{{ slide.title }}</h1>
+            <ul>
+                {% for item in slide.content %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
