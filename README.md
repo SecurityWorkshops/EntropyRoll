@@ -161,6 +161,54 @@ This is a great proof of concept but how edo we use it to send messages to other
 ### 7 - Let's build an encrypted messaging
 
 
+The 7.py file will let you create encrypted messages to anybody who you want to send to 
+
+
+
+### 8 - Backup keys 
+
+
+How do you backup your keys in an easy to store way? Somethign that can be stored outside the computer. 
+
+You could store the dice rolls and recreate your key. But this is a long manual process. There is an easier way to store those keys.
+
+Enter Mnemonic Phrases. 
+
+This is very commonn in the cryptocurrency world. Bitcoin keys for example can be backed up with a 12 word phrase representing the orignal private key. 
+
+
+
+To create the mnemonic you can use this package 
+pip install bip-utils
+
+Ruunning 8.py will give oyou output like 
+
+Mnemonic phrase for backup:
+undo health smoke material love fork expand tide axis dinner ensure bamboo vague banana element couch cricket episode valley jungle wood lucky lizard actress
+
+
+
+### 9 - Recover keys from phrase 
+
+To create your key from a phrase you can run 9.py. Be sure to edit the file to include the mnemonic from yhe previous step. 
+
+### 10 - Generate bitcoin address from your key 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
